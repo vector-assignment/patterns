@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int i, j, n;
+    char ch;  // Variable to store the character
+
+    // Prompt the user to enter the value of 'n'
+    printf("Enter the n value: ");
+    scanf("%d", &n);
+
+    // Outer loop controls the number of rows
+    for (i = 0; i < n; i++) {
+        ch = 'a';  // Reset the character for each row
+        // Inner loop controls the number of columns in each row
+        for (j = 0; j < n; j++) {
+            // Print the current character followed by two spaces
+            printf("%c  ", ch++);
+        }
+        // Move to the next line after printing 'n' characters in the inner loop
+        printf("\n");
+    }
+
+    return 0;
+}
